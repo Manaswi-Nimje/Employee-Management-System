@@ -1,2 +1,2 @@
 # Employee-Management-System
-A responsive Employee Management System developed using Angular and JSON Server to manage employee records with complete CRUD functionality.
+Employee Management System using Angular, TypeScript, Bootstrap, and JSON Server with CRUD operations and responsive user interface.

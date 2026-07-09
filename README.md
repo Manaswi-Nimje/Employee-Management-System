@@ -134,8 +134,8 @@ StudentProject/
 ## Add Student Page
 ![Add Student Page](Screenshots/AddStudentPage.png)
 
-## View Studemt
-![View Studemt](Screenshots/ViewStudemt.png)
+## View Student
+![View Student](Screenshots/ViewStudent.png)
 
 ## View By Id
 ![View By Id](Screenshots/ViewById.png)

@@ -1,0 +1,60 @@
+<div class="table-container">
+
+  <div class="heading">
+
+    <h2>Students List</h2>
+
+    <h3>Total Students : {{students.length}}</h3>
+
+  </div>
+
+  <table>
+
+    <thead>
+
+      <tr>
+
+        <th>ID</th>
+        <th>Name</th>
+        <th>Course</th>
+        <th>Marks</th>
+        <th>Admission Date</th>
+        <th>Action</th>
+
+      </tr>
+
+    </thead>
+
+    <tbody>
+
+      <tr
+      *ngFor="let s of students"
+      [ngClass]="{'highlight': s.marks > 80}">
+
+        <td>{{s.id}}</td>
+
+        <td>{{s.studname | uppercase}}</td>
+
+        <td>{{s.course}}</td>
+
+        <td>{{s.marks}}</td>
+
+        <td>{{s.admissionDate}}</td>
+
+        <td>
+
+          <button (click)="viewProfile(s.id)">
+
+            View Profile
+
+          </button>
+
+        </td>
+
+      </tr>
+
+    </tbody>
+
+  </table>
+
+</div>

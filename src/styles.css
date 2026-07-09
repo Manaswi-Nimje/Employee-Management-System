@@ -1,0 +1,28 @@
+html,
+body{
+    width:100%;
+    height:100%;
+    margin:0 !important;
+    padding:0 !important;
+    overflow-x:hidden;
+    overflow-y:auto;
+    background:#071739;
+}
+
+/* Angular Root */
+
+app-root{
+    display:block;
+    width:100%;
+    min-height:100vh;
+    margin:0;
+    padding:0;
+}
+
+/* Universal */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}

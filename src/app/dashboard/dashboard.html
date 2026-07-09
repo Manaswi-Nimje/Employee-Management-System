@@ -1,0 +1,147 @@
+<div class="layout">
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <!-- Logo -->
+
+        <div class="logo">
+
+            <div class="logo-circle">
+                🎓
+            </div>
+
+            <div>
+                <h2>Student ERP</h2>
+                <p>Smart Management System</p>
+            </div>
+
+        </div>
+
+        <!-- Navigation -->
+
+        <div class="nav-section">
+
+            <!-- Dashboard -->
+
+            <div
+            class="nav-btn dashboard-btn"
+            (click)="toggleMenu()">
+
+                <div class="left">
+
+                    <span class="icon">📊</span>
+
+                    <span>Dashboard</span>
+
+                </div>
+
+                <span class="arrow">
+
+                    {{ isMenuOpen ? '−' : '+' }}
+
+                </span>
+
+            </div>
+
+            <!-- Dropdown -->
+
+            <div
+            class="dropdown"
+            *ngIf="isMenuOpen">
+
+                <a
+                routerLink="/dashboard/students"
+                routerLinkActive="active-link">
+
+                    📋 Student List
+
+                </a>
+
+                <a
+                routerLink="/dashboard/add-student"
+                routerLinkActive="active-link">
+
+                    ➕ Add Student
+
+                </a>
+
+            </div>
+
+            <!-- Profile -->
+
+            <a
+            routerLink="/profile"
+            routerLinkActive="active-link"
+            class="profile-btn">
+
+                👤 Profile
+
+            </a>
+
+        </div>
+
+        <!-- Bottom -->
+
+        <div class="premium-card">
+
+            <h3>Student ERP</h3>
+
+            <p>
+                Modern dashboard for handling students,
+                records and profiles professionally.
+            </p>
+
+        </div>
+
+    </aside>
+
+    <!-- Main Content -->
+
+    <main class="main">
+
+        <!-- Header -->
+
+        <header class="header">
+
+            <div>
+
+                <h1>
+                    Student Management Dashboard
+                </h1>
+
+                <p>
+                    Welcome back, manage your system efficiently.
+                </p>
+
+            </div>
+
+            <!-- Right -->
+
+            <div class="admin-panel">
+
+                <div class="admin-icon">
+                    👨‍💻
+                </div>
+
+                <div>
+                    <h4>Admin Panel</h4>
+                    <span>ERP Administrator</span>
+                </div>
+
+            </div>
+
+        </header>
+
+        <!-- Content -->
+
+        <section class="content">
+
+            <router-outlet></router-outlet>
+
+        </section>
+
+    </main>
+
+</div>

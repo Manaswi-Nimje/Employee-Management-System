@@ -1,0 +1,40 @@
+<div class="form-container">
+
+    <h2>Add Student</h2>
+
+    <form [formGroup]="studentForm"
+          (ngSubmit)="addStudent()">
+
+        <input
+         type="number"
+         placeholder="Enter ID"
+         formControlName="id">
+
+        <input
+        type="text"
+        placeholder="Student Name"
+        formControlName="studname">
+
+        <input
+        type="text"
+        placeholder="Course"
+        formControlName="course">
+
+        <input
+        type="number"
+        placeholder="Marks"
+        formControlName="marks">
+
+        <input
+        type="date"
+        formControlName="admissionDate">
+
+        <button type="submit">
+
+            Add Student
+
+        </button>
+
+    </form>
+
+</div>

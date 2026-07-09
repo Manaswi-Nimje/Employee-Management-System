@@ -122,6 +122,24 @@ StudentProject/
 └── README.md
 ```
 
+## Homepage
+![Home Page](Screenshots/Homepage.png)
+
+## Add Student
+![Add Student](Screenshots/AddStudent.png)
+
+## View Profile
+![View Profile](Screenshots/ViewProfile.png)
+
+## Add Student Page
+![Add Student Page](Screenshots/AddStudentPage.png)
+
+## View Studemt
+![View Studemt](Screenshots/ViewStudemt.png)
+
+## View By Id
+![View By Id](Screenshots/ViewById.png)
+
 ## 🧭 Routes
 
 | Path | Component | Description |
